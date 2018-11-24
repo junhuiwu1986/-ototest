@@ -1,0 +1,56 @@
+[
+  {
+    "description":"这获得一个ｃｏｏｋｉｅｓ请求",
+    "request":{
+       "uri":"/get/cookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true",
+        "status":"wujunhui1111"
+      },
+      "text":"这是一个ｃｏｏｋｉｅｓ返回成功"
+    }
+
+  },
+
+
+  {
+    "description":"这是一个带ｃｏｏｋｉｅｓ的ｇｅｔ请求",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies": {
+        "login": "true"
+      }
+      },
+      "response":{
+        "text":"这是一个需要ｃｏｏｋｉｅｓ返回个体请求"
+      }
+
+
+  },
+  {
+    "description": "这是一个ｐｏｓｔ请求带ｃｏｏｋｉｅｓ",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "lisi",
+        "age": "10"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "lisi": "sucess",
+        "status": "1ha和"
+      }
+    }
+  }
+
+]

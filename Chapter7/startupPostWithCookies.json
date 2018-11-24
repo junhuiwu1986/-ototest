@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是一个ｐｏｓｔ请求带ｃｏｏｋｉｅｓ",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"lisi",
+        "age":"10"
+      }
+    },
+
+      "response":{
+        "status":200,
+        "json":{
+            "lisi":"sucess",
+          "status":"1ha和"
+        }
+      }
+
+    }
+
+]
