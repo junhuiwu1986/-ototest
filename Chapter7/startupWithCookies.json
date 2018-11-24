@@ -40,7 +40,7 @@
       },
       "json": {
         "name": "lisi",
-        "age": "10"
+        "age": 10
       }
     },
     "response": {
