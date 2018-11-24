@@ -21,7 +21,7 @@ public class MyPostMethod {
                         @RequestParam(value = "userNme",required = true) String userNme,
                         @RequestParam(value = "password",required = true)String password ){
         if (userNme.equals("lisi")&&password.equals("123456")) {
-            cookie=new Cookie("login","1111");
+            cookie=new Cookie("login","");
             response.addCookie(cookie);
             return "恭喜你登陆成功";
         }
