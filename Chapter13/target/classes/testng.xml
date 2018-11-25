@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="用户管理系统">
+    <test name="用户管理系统测试用例">
+        <classes>
+            <class name="com.course.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                    <include name="loginFalse"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.AddUserCase">
+                <methods>
+                    <include name="AddUser"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.GetUserInfoTest">
+                <methods>
+                    <include name="getUserInfo"/>
+                </methods>
+            </class>
+
+            <class name="com.course.cases.UpdateUserCase">
+                <methods>
+                    <include name="updateUserInfoTest"/>
+                    <include name="deleteUserTest"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.GetUserInfoListCase">
+                <methods>
+                    <include name="getUserInfoListTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <!--C:\Users\Administrator\.ssh\workspace\muke\Chapter13\src\main\java\course\config\ExtentTestNGIReporterListener.java-->
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+        <!--<listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListenerOld"/>-->
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

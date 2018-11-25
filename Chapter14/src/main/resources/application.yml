@@ -1,0 +1,19 @@
+sercer:
+  port: 8888
+
+logging:
+  path: logs
+  file: uesrManget.log
+
+ Spring:
+   application:
+     name: uesrManager
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://192.168.18.26:3306/course
+     username: root
+     password: 971504
+
+mybatis:
+  type-aLiases-package: com.course.model
+  mapper-location:
+    -mapper/*
